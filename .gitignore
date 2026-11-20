@@ -1,5 +1,11 @@
+# Learner repository: build output, dependencies and local editor/OS files.
 target/
+.classpath
+.project
+.settings/
+.factorypath
 .idea/
-.vscode/
 *.iml
+.vscode/
 .DS_Store
+Thumbs.db

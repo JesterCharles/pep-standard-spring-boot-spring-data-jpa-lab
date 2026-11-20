@@ -97,11 +97,6 @@ The lab writes only `starter/target`:
 - macOS and Linux: `rm -rf target`
 - Windows PowerShell: `Remove-Item -Recurse -Force target`
 
-## Start a file over
-
-To put a file you edited back to its shipped version, run `git restore <file>` from the repository root, for example `git restore starter/src/main/java/workshops/Workshop.java`. This discards your changes to that file only; copy anything you want to keep first.
-To start a file you created over, delete it: `starter/src/main/java/workshops/WorkshopResponse.java`.
-
 ## Troubleshooting
 
 - **`Not a managed type: class workshops.Workshop`**: Task 1 is not done yet; the repository needs the class annotated with `@Entity`.

@@ -1,0 +1,13 @@
+# Exa grading manifest for this lab: best-effort first version, not yet
+# verified inside Exa Studio. It follows the observed Exa schema (everything
+# under 'test:') and is meant to drive both local Run Tests and grading.
+#
+# ASSUMPTION: no 'image' is declared, so Exa's documented fallback to the
+# project's pinned runtime pack applies. The imported Exa Java template must supply JDK 25, Apache Maven 3.9 and this lab's Maven dependencies available offline: the command runs Maven offline (-o) and there is no 'setup' step.
+#
+# The lab's own declared test command is: mvn -q -o test (run from 'starter' inside the lab).
+# The command below runs from the repository root (ASSUMPTION: through a shell)
+# and adds a JUnit report file.
+test:
+  command: "mvn -q -B -o -f starter/pom.xml test"
+  reports: "starter/target/surefire-reports/*.xml"
